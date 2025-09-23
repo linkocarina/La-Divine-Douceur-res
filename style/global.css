@@ -7,8 +7,68 @@
 * {
     padding: 0;
     margin: 0;
+    font: inherit;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 :root{
-    
+    --text-primary-color: #586473;
+    --text-secondary-color: #9c9fa3;
+
+    --gradient-color1: #DF397F;
+    --gradient-color2: #D02077;
+    --gradient-color3: #9B239F;
+
+    --bg1-color: #F2EBEE;
+    --bg2-color: #FEEFF5;
+
+    --border-color: #b4afb1c5;
+
+    --color-primary: #E91E63;
+    --color-secondary: #F8BBD9;
+    --color-contrast: #8E24AA;
+
+    --ff-sans: 'Pacifico', sans-serif, system-ui;
+    --ff-base: 'Poppins', sans-serif, system-ui;
+
+    --fw-sm: 300;
+    --fw-base: 400;
+    --fw-bold: 600;
+    --fw-bolder: 800;
+
+    --fs-sm: .875rem;
+    --fs-base: 1rem;
+    --fs-lg: 1.5rem;
+    --fs-xl: 2.5rem;
+
+    --px-sm: 1rem;
+    --py-sm: 1.125rem;
+
+}
+
+html {
+    font-family: var(--ff-base);
+    font-weight: var(--ff-base);
+    font-size: var(--ff-base);
+    line-height: 1.6;
+
+    color: var(--text-primary-color);
+}
+
+body{
+    background-color: var(--bg1-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-primary-color);
+}
+
+a:hover{
+    color: var(--color-primary);
+    background-color: #fcadd5;
+    transition: .3s;
+    border-radius: .4rem;
 }
