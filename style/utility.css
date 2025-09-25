@@ -14,6 +14,14 @@
     padding-inline: 2rem;
 }
 
+.py-lg{
+    padding-block: 2rem;
+}
+
+.pa-base{
+    padding: 1rem;
+}
+
 .px-sm{
     padding: var(--px-sm);
 }

@@ -12,6 +12,7 @@
 }
 
 #gallery{
+    justify-items: center;
     gap: 2.5rem;
     grid-template-columns: 1fr;
 
@@ -44,13 +45,14 @@
 
 @media (min-width: 80rem){
     #gallery{
+        justify-items: center;
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
 @media (max-width: 1024px) {
     #gallery{
-        
+        justify-items: center;
         grid-template-columns: repeat(2, 1fr);
     }
 
