@@ -14,7 +14,8 @@
 #gallery{
     justify-items: center;
     gap: 2.5rem;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
 
     div{
  
@@ -45,15 +46,17 @@
 
 @media (min-width: 80rem){
     #gallery{
-        justify-items: center;
-        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 }
 
 @media (max-width: 1024px) {
     #gallery{
-        justify-items: center;
-        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
 
