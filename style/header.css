@@ -1,6 +1,12 @@
+header{
+    background-color: white;
+}
+
 h1{
-    font-family: var(--ff-sans);
+    font-family: var(--ff-base);
     color: var(--color-primary);
+    font-weight: var(--fw-bolder);
+    font-size: var(--fs-md);
 }
 
 .logo{
@@ -29,6 +35,8 @@ nav{
         display: none;
     }
 }
+
+
 
 
 

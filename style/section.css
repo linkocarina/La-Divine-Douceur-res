@@ -1,0 +1,59 @@
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#sobre{
+  padding: 2.5rem 1.125rem;
+  background-color: var(--bg2-color);
+
+  .sobre-texto{
+    h2{
+      font-size: var(--fs-lg);
+      font-weight: var(--fw-bolder);
+      color: var(--color-primary);
+    }
+  }
+
+  button{
+    background-color: var(--color-primary);
+    color: var(--bg2-color);
+    border: 0;
+    border-radius: .5rem;
+  }
+
+  .sobre-logo img{
+    margin-block: 3.125rem;
+    border-radius: 50%;
+    box-shadow: 0 0 60px rgba(255, 20, 147, 0.4);
+    width: 20.375rem;
+    height: 20.375rem;
+  }
+
+  .girar{
+    animation: girar 90s linear infinite;
+  }
+}
+
+@media (min-width: 80rem){
+
+  #sobre{
+    padding: 5rem 2rem;
+  }
+  .grid{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .sobre-logo{
+    grid-column: 3;
+  }
+}
+
+@media (min-width: 64rem){
+  .grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
