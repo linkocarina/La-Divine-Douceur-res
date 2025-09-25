@@ -59,6 +59,7 @@ html {
 }
 
 body{
+    overflow-x: hidden;
     background-color: var(--bg1-color);
 }
 

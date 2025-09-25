@@ -1,13 +1,31 @@
 .py-sm{
     padding: var(--py-sm);
 }
+
+.px-base{
+    padding-inline: 1rem;
+}
+
+.text-aling{
+    text-align: center;
+}
+
+.px-lg{
+    padding-inline: 2rem;
+}
+
 .px-sm{
     padding: var(--px-sm);
+}
+
+.py-base{
+    padding-block: .5rem;
 }
 
 .grid{
     display: grid;
 }
+
 
 
 .container{
