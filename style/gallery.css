@@ -2,7 +2,6 @@
     background-color: white;
 
     h2{
-        text-align: center;
         font-size: var(--fs-lg);
         font-weight: var(--fw-bolder);
         color: var(--color-primary);
@@ -18,7 +17,9 @@
     flex-direction: column;
 
     div{
- 
+        transition-property: transform;
+        transition-duration: .2s;
+       background-color: var(--bg1-color);
        overflow: hidden;
        width: 20rem;
        height: 21.875rem;
@@ -41,6 +42,11 @@
         width: 20.5rem;
         height: 11rem;
        }
+    }
+
+    div:hover{
+        transform: translateY(-10px);
+        box-shadow: 0 0 2rem rgba(255, 20, 147, 0.4);
     }
 }
 
