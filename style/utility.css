@@ -34,6 +34,11 @@
     display: grid;
 }
 
+.enven-columns{
+    display: grid;
+    gap: 1rem;
+}
+
 
 
 .container{
@@ -49,10 +54,20 @@
     .container {
         --max-width: 80rem;
     }
+
+    .enven-columns{
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+    }
 }
 
 @media (width: 64rem){
     .container{
         --max-width: 64rem;
+    }
+
+    .enven-columns{
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
     }
 }

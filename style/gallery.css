@@ -11,10 +11,6 @@
 }
 
 #gallery{
-    justify-items: center;
-    gap: 2.5rem;
-    display: flex;
-    flex-direction: column;
 
     div{
         transition-property: transform;
@@ -48,22 +44,4 @@
         transform: translateY(-10px);
         box-shadow: 0 0 2rem rgba(255, 20, 147, 0.4);
     }
-}
-
-@media (min-width: 80rem){
-    #gallery{
-        justify-content: center;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-}
-
-@media (max-width: 1024px) {
-    #gallery{
-        justify-content: center;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-
 }
